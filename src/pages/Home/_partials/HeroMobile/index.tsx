@@ -1,10 +1,8 @@
 import { MotionBox, MotionText } from "@/components/Motion";
-import { useThemeVars } from "@/hooks/useThemeVars";
 import { Box, Typography } from "@mui/material";
 import LetsConnectLinks from "../LetsConnectLinks";
 
 const HeroMobile = () => {
-  const { colors } = useThemeVars();
   const baseDelay = 0.2;
   return (
     <Box

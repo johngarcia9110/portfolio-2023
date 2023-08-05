@@ -29,8 +29,8 @@ const ContactBlob = () => {
         animate={{
           transform: "translateX(-50%) translateY(50%) scale(2)",
         }}
-        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-        exit={{ transform: "scale(20)", border: "4px solid red" }}
+        transition={{ delay: 0, duration: 0.4, ease: "easeInOut" }}
+        exit={{ transform: "scale(20)" }}
         src="/home-blob.svg"
         alt="blob"
       />

@@ -1,11 +1,9 @@
-import { useThemeVars } from "@/hooks/useThemeVars";
 import PageTitle from "./_patials/PageTitle";
 import BackgroundSection from "./_patials/BackgroundSection";
 import { Box, Container, Typography } from "@mui/material";
 import { SkillBox } from "@/components/SkillBox";
 
-const About = (props: RouteComponentProps) => {
-  const { colors } = useThemeVars();
+const About = () => {
   return (
     <>
       <PageTitle />

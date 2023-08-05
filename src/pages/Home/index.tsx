@@ -1,10 +1,8 @@
-import { useThemeVars } from "../../hooks/useThemeVars";
 import { Box, Container } from "@mui/material";
 import HeroDesktop from "./_partials/HeroDesktop";
 import HeroMobile from "./_partials/HeroMobile";
 
-const Home = (props: RouteComponentProps) => {
-  const { colors } = useThemeVars();
+const Home = () => {
   return (
     <Box
       sx={{

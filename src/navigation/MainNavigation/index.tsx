@@ -1,17 +1,10 @@
-import { Stack, Box, Link, Container, Typography } from "@mui/material";
-import { Link as RRLink, useLocation } from "react-router-dom";
-import { useThemeVars } from "@/hooks/useThemeVars";
+import { Box, Container } from "@mui/material";
+import { Link as RRLink } from "react-router-dom";
 import { mainNavigationLinks } from "@/config";
-import { motion } from "framer-motion";
 import Desktop from "./_partials/Desktop";
 import Mobile from "./_partials/Mobile";
 
-const MotionBox = motion(Box);
-const MotionTypography = motion(Typography);
-
 const MainNavigation = () => {
-  const { colors } = useThemeVars();
-  const location = useLocation();
   return (
     <Box
       sx={{

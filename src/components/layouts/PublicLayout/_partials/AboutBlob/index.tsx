@@ -28,7 +28,7 @@ const AboutBlob = () => {
         initial={{ transform: "scale(20)" }}
         animate={{ transform: "scale(2)" }}
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-        exit={{ transform: "scale(20)", border: "4px solid red" }}
+        exit={{ transform: "scale(20)" }}
         src="/home-blob.svg"
         alt="blob"
       />
@@ -44,7 +44,7 @@ const AboutBlob = () => {
         initial={{ transform: "scale(20) rotate(0deg)" }}
         animate={{ transform: "scale(1) rotate(90deg)" }}
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-        exit={{ transform: "scale(20)", border: "4px solid red" }}
+        exit={{ transform: "scale(20)" }}
         src="/home-blob.svg"
         alt="blob"
       />

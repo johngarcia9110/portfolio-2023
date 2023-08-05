@@ -1,6 +1,5 @@
 import { MotionBox } from "@/components/Motion";
-import { useThemeVars } from "@/hooks/useThemeVars";
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import IconButton from "@/components/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -8,7 +7,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { useNavigate } from "react-router-dom";
 
 const LetsConnectLinks = () => {
-  const { colors } = useThemeVars();
   const navigate = useNavigate();
   return (
     <MotionBox

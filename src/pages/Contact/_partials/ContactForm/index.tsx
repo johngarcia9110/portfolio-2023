@@ -1,21 +1,14 @@
 import { MotionBox } from "@/components/Motion";
 import { useThemeVars } from "@/hooks/useThemeVars";
-import {
-  Box,
-  Button,
-  Container,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { LoadingButton } from "@mui/lab";
+import { Box, Container, Stack, TextField, Typography } from "@mui/material";
 import { useForm } from "react-hook-form";
 
 const ContactForm = () => {
   const {
-    control,
     handleSubmit,
     register,
-    formState: { submitting },
+    formState: { isSubmitting },
   } = useForm();
   const submit = () => console.log("submitting");
   const { colors } = useThemeVars();
@@ -92,15 +85,16 @@ const ContactForm = () => {
               {...register("message")}
             />
             <Stack direction={"row"} justifyContent={"flex-end"}>
-              <Button
+              <LoadingButton
                 variant="contained"
                 size="large"
                 sx={{ maxWidth: "180px", width: "100%" }}
                 type="submit"
+                loading={isSubmitting}
               >
                 {" "}
                 Submit
-              </Button>
+              </LoadingButton>
             </Stack>
           </Stack>
         </form>
