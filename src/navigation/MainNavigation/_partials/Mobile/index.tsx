@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Link as RRLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { AnimatePresence } from "framer-motion";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Mobile = ({ links }: { links: any[] }) => {
   const { colors } = useThemeVars();
@@ -35,6 +36,8 @@ const Mobile = ({ links }: { links: any[] }) => {
               zIndex: 100,
               width: "100%",
               height: "100vh",
+              minHeight: "-webkit-fill-available", // fixes "height: 100vh" not working on mobile
+              webKitFillAvailable: true,
               overflow: "hidden",
               display: "flex",
               justifyContent: "flex-end",
@@ -108,7 +111,10 @@ const Mobile = ({ links }: { links: any[] }) => {
                   );
                 }
               )}
-              <Button onClick={() => setNavIsOpen(false)}>Close</Button>
+              <Button variant="outlined" onClick={() => setNavIsOpen(false)}>
+                <CloseIcon />
+                Close
+              </Button>
             </Stack>
           </MotionBox>
         )}

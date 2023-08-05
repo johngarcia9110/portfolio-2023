@@ -19,6 +19,7 @@ const ContactForm = () => {
         flexDirection: "column",
         alignItems: "center",
       }}
+      maxWidth={"lg"}
     >
       <MotionBox
         sx={{

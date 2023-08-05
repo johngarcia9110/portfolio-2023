@@ -9,6 +9,7 @@ const HeroMobile = () => {
       sx={{
         width: "100%",
         display: { xs: "block", sm: "none" },
+        pb: 6,
       }}
     >
       <Box
