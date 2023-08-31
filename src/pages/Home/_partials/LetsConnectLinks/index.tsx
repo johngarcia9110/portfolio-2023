@@ -13,23 +13,22 @@ const LetsConnectLinks = () => {
       sx={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
-        py: 2,
-        px: 2,
+        justifyContent: "flex-end",
+        gap: 2,
+        py: { xs: 2, sm: "unset" },
+        px: { xs: 2, sm: "unset" },
         //border: { xs: "none", md: `2px solid ${colors.secondary}` },
-        border: `1px solid rgb(251 251 251 / 48%)`,
+        border: { xs: `1px solid rgb(251 251 251 / 48%)`, sm: "unset" },
         borderRadius: "12px",
         background: "rgb(229 229 229 / 60%)",
         backdropFilter: "blur(11.6px)",
-        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.2)",
+        boxShadow: { xs: "0 4px 30px rgba(0, 0, 0, 0.2)", sm: "unset" },
       }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 0.8 }}
     >
-      <Typography sx={{ fontWeight: "400", color: "#6c6c6c" }}>
-        Let's connect!
-      </Typography>
+      <Typography sx={{ fontWeight: "400" }}>Let's connect!</Typography>
 
       <Stack direction={"row"} gap={1}>
         <IconButton icon={<EmailIcon />} onClick={() => navigate("/contact")} />

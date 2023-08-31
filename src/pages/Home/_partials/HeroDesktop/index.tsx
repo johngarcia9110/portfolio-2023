@@ -100,7 +100,7 @@ const HeroDesktop = () => {
             </Typography>
           </MotionBox>
           <MotionText
-            mb={6}
+            mb={2}
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6, duration: 0.5 }}
@@ -124,7 +124,7 @@ const HeroDesktop = () => {
             sx={{
               //maxWidth: { xs: "250px", md: "850px" },
               width: "100%",
-              maxWidth: { xs: "250px", md: "480px" },
+              maxWidth: { xs: "250px", sm: "480px" },
               zIndex: 1,
               position: "relative",
             }}
